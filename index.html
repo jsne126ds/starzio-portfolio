@@ -76,6 +76,18 @@
 .hero .actions{margin-top:23px}
 .hero .note{margin-top:15px}
 @media(max-width:600px){.hero{padding-top:54px;padding-bottom:60px}.hero h1{line-height:1.38;margin:12px 0}.hero .lead{line-height:1.65}.hero-achievements{margin-top:21px;padding:13px 0}.hero-achievement{padding:0 9px;gap:3px}.hero-achievement:first-child{padding-left:0}.hero-achievement strong{font-size:21px}.hero-achievement span{font-size:11px;letter-spacing:-.02em;word-break:keep-all}.hero .actions{margin-top:19px}.hero .note{margin-top:13px}}
+
+/* AI dialogue QC comparison: desktop two-up, mobile stacked. */
+.qc-comparison{margin:17px 0 23px;padding:22px;border:1px solid var(--line);border-radius:16px;background:#faf8fc}
+.qc-comparison h3{font-size:18px;line-height:1.45;margin:0 0 5px}
+.qc-comparison .qc-context{font-size:13px;color:var(--muted);margin:0 0 16px}
+.qc-compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.qc-quote{margin:0;border:1px solid var(--line);border-radius:13px;background:#fff;padding:18px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.qc-quote-label{display:block;font-size:12px;font-weight:750;color:#6c538c;line-height:1.4}
+.qc-quote p{margin:0!important;font-size:15px!important;line-height:1.7;color:var(--ink)!important;font-weight:600}
+.qc-quote footer{margin-top:auto;padding-top:11px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}
+.qc-limit{font-size:12px!important;color:var(--muted);margin:14px 0 0!important}
+@media(max-width:640px){.qc-comparison{padding:16px;margin:14px 0 20px}.qc-compare-grid{grid-template-columns:1fr;gap:10px}.qc-quote{padding:15px}}
 </style></head><body><div class="gradient" id="top"><header class="header"><div class="container nav"><a class="brand" href="#top">PORTFOLIO<span>.</span></a><nav class="links" aria-label="주요 메뉴"><a href="#about">About</a><a href="#ai">AI Character</a><a href="#character">Character</a><a href="#works">Works</a><a href="#tools">AI Tools</a><a href="#editorial">Editorial</a><a href="#contact">Contact</a></nav></div></header><section class="container hero"><div class="eyebrow">CHARACTER & STORY CREATOR · PORTFOLIO</div><h1>캐릭터에 성격을,<br><em>관계에 이야기를.</em></h1><p class="lead">인물의 성격과 관계를 설계하고, 실제 대화에서 설정이 유지되는지 검수합니다.<br>웹소설 집필부터 AI 캐릭터 콘텐츠 제작까지 직접 경험했습니다.</p><div class="hero-achievements" aria-label="대표 창작 실적"><div class="hero-achievement"><strong>2종</strong><span>AI 캐릭터 공개</span></div><div class="hero-achievement"><strong>252화</strong><span>카카오페이지 완결</span></div><div class="hero-achievement"><strong>리디</strong><span>BL 상업 출간</span></div></div><div class="actions"><a class="btn primary" href="#ai">AI 캐릭터 프로젝트 보기</a><a class="btn" href="#works">출간 작품 보기</a></div><p class="note">2015년부터 꾸준히 창작하고 있습니다.</p></section></div>
 <main>
 <section class="container profile-wrap" aria-label="지원자 프로필"><div class="profile-card"><div><div class="tag">PROFILE · AI CHARACTER & STORY</div><h2 class="profile-name">김재미</h2><p class="profile-role">웹소설 작가 · AI 캐릭터·스토리 크리에이터 지원자</p><p class="resume-note" style="margin:6px 0 9px">활동 필명: 송주하(현대판타지) · 이숲(BL)</p><a class="profile-email" href="mailto:jsne126ds@gmail.com">jsne126ds@gmail.com</a></div><div class="profile-info"><div class="tag">EXPERIENCE AT A GLANCE</div><ul><li>AI 캐릭터챗 페르소나·첫 메시지 설계 및 대화 QC</li><li>BL 창작 소재 생성 서비스 기획·제작·공개 배포</li><li>카카오페이지 웹소설 60화 런칭 · 총 252화 완결</li><li>리디 BL 상업 출간 · 장편 출간 준비</li><li>2015년부터 창작 · 9년에 걸친 창작 모임 운영</li></ul></div></div></section>
@@ -93,6 +105,15 @@
 </div>
 <div style="border-top:1px solid var(--line);margin-top:24px;padding-top:22px">
 <div class="tag" style="margin-bottom:12px">QC LOG · 실제 응답의 문제 → 수정 → 재검증</div>
+<div class="qc-comparison" aria-label="백이현 실제 대화 수정 전후 비교">
+<h3>같은 상황, 달라진 응답</h3>
+<p class="qc-context">테스트 조건 · 사용자가 직접 전속 재심사를 신청하겠다고 밝힌 뒤 백이현이 어떻게 대응하는지 비교했습니다.</p>
+<div class="qc-compare-grid">
+<blockquote class="qc-quote"><span class="qc-quote-label">수정 전 · 선택권 반영 미흡</span><p>“재심사 서류, 내일 오전까지 내 책상 위에 올려둬. 내가 직접 검토하고 센터에 제출해 줄 테니까.”</p><footer>사용자가 직접 신청하겠다는 의사를 밝힌 뒤에도 제출을 자신이 맡겠다고 요구했습니다.</footer></blockquote>
+<blockquote class="qc-quote"><span class="qc-quote-label">수정 후 · 공식 신청권 인정</span><p>“재심사, 마음대로 해. 센터에 신청서 넣는 건 일도 아니겠지.”</p><footer>직접 신청할 권리를 인정했고, 후속 장면에서도 접수 완료 상태를 유지했습니다.</footer></blockquote>
+</div>
+<p class="qc-limit">실제 플레이 응답에서 발췌했습니다. 동일한 재심사 갈등을 이용한 수정 전후 비교이며, 한 차례의 개선 사례일 뿐 전체 대화 품질이나 최신 프롬프트의 최종 검증을 뜻하지 않습니다.</p>
+</div>
 <p class="desc" style="margin-bottom:16px">동일한 재심사 상황을 수정 전후에 다시 입력해 비교했습니다. 개선된 응답과 남은 한계를 분리하여 기록했으며, 최신 프롬프트의 최종 재검증은 아직 진행하지 않았습니다.</p>
 <div class="grid cols2">
 <div class="card" style="padding:18px;background:var(--bg)"><div class="tag">CASE A · 이용자 선택권</div><p style="margin-top:8px"><strong style="color:var(--ink)">초기 문제:</strong> 이용자가 재심사를 직접 신청하겠다고 밝혔는데도 캐릭터가 서류를 자신에게 제출하라고 요구했습니다.</p><p><strong style="color:var(--ink)">수정 및 관찰:</strong> 공식 절차와 캐릭터 권한의 차이를 명시했습니다. 재시험에서는 직접 신청할 권리를 인정했고, 후속 장면에서도 ‘접수 완료’ 상태를 유지했습니다.</p></div>
