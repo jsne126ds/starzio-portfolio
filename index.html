@@ -124,7 +124,7 @@
 @media(max-width:600px){.qa-check-grid .card{padding:22px!important}.qa-check-grid .card p{line-height:1.9}}
 
 .character-sample{padding:clamp(40px,6vw,76px) 0}
-.character-sample-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,32px);margin-top:24px}
+.character-sample-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:clamp(16px,3vw,32px);margin-top:24px}
 .character-sample-card{margin:0;padding:clamp(16px,2.6vw,28px);border:1px solid var(--line);border-radius:16px}
 .character-sample-card img{display:block;width:100%;max-width:290px;height:auto;margin:0 auto;border-radius:10px}
 .character-sample-card figcaption{max-width:38ch;margin:20px auto 0}
@@ -167,7 +167,7 @@
 <section id="seonwoo-hyeon" aria-labelledby="character-sample-heading" class="character-sample">
   <div class="container">
     <h2 id="character-sample-heading">미공개 캐릭터 이미지 샘플</h2>
-    <p class="desc">캐릭터의 첫인상에 맞춰 반실사부터 2D 웹툰풍까지 다양한 화풍으로 이미지를 제작합니다. 두 샘플은 선의 굵기와 채색을 달리한 2D 일러스트에 소품의 움직임을 더한 작업입니다.</p>
+    <p class="desc">캐릭터의 첫인상에 맞춰 반실사부터 2D 웹툰풍까지 다양한 화풍으로 이미지를 제작합니다. 풍선껌과 담뱃불, 농구공에 움직임을 더해 인물의 표정과 버릇을 한 컷에 담았습니다.</p>
     <div class="character-sample-grid">
       <figure class="character-sample-card">
         <img src="./assets/풍선껌.gif" width="768" height="1280" loading="lazy" alt="옅은 색으로 그린 은발 남성의 입가에서 분홍 풍선껌이 부풀다 터지는 장면">
@@ -181,6 +181,13 @@
         <figcaption>
           <h3>짙은 눈매와 강한 명암</h3>
           <p>검은 머리와 수트 사이로 턱선이 도드라지게 명암을 잡고, 귀 뒤에 자줏빛을 얇게 둘렀습니다. 시선을 고정한 채 담뱃불과 가는 연기만 움직여 느긋한 분위기를 살렸습니다.</p>
+        </figcaption>
+      </figure>
+      <figure class="character-sample-card" id="basketball-spin">
+        <img src="./assets/농구.gif" width="768" height="1280" loading="lazy" alt="버건디색 유니폼을 입은 농구 선수의 검지 끝에서 농구공이 한 바퀴 도는 장면">
+        <figcaption>
+          <h3>반실사로 표현한 농구 선수</h3>
+          <p>경기장 입구로 들어오는 빛을 따라 어깨와 팔의 굴곡을 살렸습니다. 손끝에 닿는 지점과 공에 맺힌 빛은 고정하고, 가죽 표면과 검은 솔기가 함께 돌도록 연출했습니다.</p>
         </figcaption>
       </figure>
     </div>
