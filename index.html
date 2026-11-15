@@ -91,13 +91,13 @@
 
 /* Recruiter-first character project navigation */
 .recruiter-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:12px 0 14px}
-.recruiter-project{display:block;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff;transition:transform .2s,border-color .2s}
-.recruiter-project:hover{transform:translateY(-3px);border-color:var(--accent)}
+.recruiter-project{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff;transition:transform .2s,border-color .2s}
+@media(hover:hover) and (pointer:fine){.recruiter-project:hover{transform:translateY(-3px);border-color:var(--accent)}}
 .recruiter-project:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .recruiter-project img{width:100%;height:210px;object-fit:cover;object-position:center 27%;display:block;background:var(--bg)}
-.recruiter-project-body{padding:18px 20px 22px}.recruiter-project-body h3{font-size:22px;margin:6px 0 2px}.recruiter-project-body strong{font-size:14px;color:var(--ink)}
+.recruiter-project-body{display:flex;flex:1;flex-direction:column;min-width:0;padding:18px 20px 22px}.recruiter-project-body h3{font-size:22px;margin:6px 0 2px}.recruiter-project-body strong{font-size:14px;color:var(--ink)}
 .recruiter-project-body p{font-size:13px;color:var(--muted);line-height:1.65;margin:11px 0 14px;min-height:66px}
-.recruiter-project-link{font-size:13px;font-weight:750;color:var(--accent)}.case-guide{font-size:13px;color:var(--muted);margin:0 0 26px}
+.recruiter-project-link{margin-top:auto;font-size:13px;font-weight:750;color:var(--accent)}.case-guide{font-size:13px;color:var(--muted);margin:0 0 26px}
 .case-detail{border:1px solid var(--line);border-radius:17px;margin:15px 0;background:var(--bg);scroll-margin-top:95px}
 .case-detail>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;list-style:none;padding:20px 24px;font-weight:800;color:var(--ink)}
 .case-detail>summary::-webkit-details-marker{display:none}.case-detail[open]>summary{border-bottom:1px solid var(--line)}
@@ -202,9 +202,9 @@
 <a class="recruiter-project" href="#case-sihyeon" aria-label="시현아, 가방 좀 들어 봐. · 제타에서 티키타로 이식한 사례로 이동"><img src="./assets/정시현3.png" alt="그린대학교 공대생 정시현의 캠퍼스 로맨스 작품 소개 포스터" loading="lazy" decoding="async"><div class="recruiter-project-body"><span class="tag">ZETA → TIKITA · PORTING CASE 05</span><h3>정시현</h3><strong>제타→티키타 이식 · 선후배 로맨스 · 참여형 기능</strong><p>과묵한 후배와 선배의 관계를 핵심 매력으로 소개하고, 관찰일지·비공개 열람 명령어로 플랫폼별 콘텐츠 경험을 재구성</p><span class="recruiter-project-link">플랫폼 이식·콘텐츠 구성 보기 ↓</span></div></a>
 <a class="recruiter-project" href="#case-jaeuk" aria-label="권재욱 · 나의 주인, 나의 아저씨 상세 제작 사례로 이동"><img src="./assets/%EA%B6%8C%EC%9E%AC%EC%9A%B1%20NEW%EC%9B%90%EB%B3%B8.png" alt="나의 주인, 나의 아저씨의 권재욱 캐릭터 일러스트" loading="lazy" decoding="async"><div class="recruiter-project-body"><span class="tag">TIKITA · CHARACTER 06</span><h3>권재욱</h3><strong>연상 로맨스 · 상황별 말투 · 대화 검수</strong><p>일상과 합의된 플레이에서 달라지는 말투를 설계하고, AI가 이용자 대신 대답하는 오류를 점검</p><span class="recruiter-project-link">캐릭터 기획·대화 검수 보기 ↓</span></div></a>
 <a class="recruiter-project" href="#mugyeol-video" aria-label="최무결 · 누아룸 공개 작품과 제작 사례 보기"><img src="https://sfhysqdoqkikhvayhsgs.supabase.co/storage/v1/object/public/characters/2026/11/Vt3tW4Q6s3fnrh0l5l9FMA.webp" alt="클러스터 멤버 최무결 캐릭터 일러스트" loading="lazy" decoding="async"><div class="recruiter-project-body"><span class="tag">NUAROOM · CHARACTER 07</span><h3>최무결</h3><strong>아이돌 소꿉친구 · 열애설 · 홍보 영상 제작</strong><p>같은 토끼 키링이 찍힌 두 장의 인스타 스토리로 열애설 도입을 구성하고, 무대와 일상 속 무결을 담은 홍보 영상 제작</p><span class="recruiter-project-link">작품 기획·제작 과정 보기 ↓</span></div></a>
-<a class="recruiter-project" href="#case-taehyeon" aria-label="류태현 상세 제작 사례로 이동">
-<img src="./assets/%EB%A5%98%ED%83%9C%ED%98%84%20%EC%9B%90%EB%B3%B8.png" width="768" height="1280" alt="짙은 버건디색 머리에 검은 티셔츠를 입은 류태현의 정면 초상" loading="lazy" decoding="async" style="object-position:center 43%">
-<div class="recruiter-project-body"><span class="tag">TIKITA · CHARACTER 08</span><h3>류태현</h3><strong>헌터물 · 라이벌 재회 · 소개 HTML</strong><p>헌터협회 순위표에 현 1위 태현과 비활동 상태인 이용자를 나란히 두고, 두 사람의 과거는 펼쳐 읽는 사고 기록으로 구성했습니다.</p><span class="recruiter-project-link">소개 HTML·기획 사례 보기 ↓</span></div></a>
+<a class="recruiter-project" id="character-taehyeon" href="#case-taehyeon" aria-label="류태현 소개 페이지와 랭킹 설계 사례 보기">
+<img src="./assets/ryu-taehyeon-intro.webp" width="768" height="1280" alt="노란 통제선 앞에 앉아 이용자를 올려다보는 류태현" loading="lazy" decoding="async">
+<div class="recruiter-project-body"><span class="tag">TIKITA · CHARACTER 08</span><h3>류태현</h3><strong>헌터물 · 라이벌 재회 · 랭킹 시스템</strong><p>헌터협회 순위표로 두 라이벌을 소개하고, 사고 기록을 펼쳐 두 사람의 과거를 읽는 HTML 소개 페이지 제작</p><span class="recruiter-project-link">소개 페이지·랭킹 설계 보기 ↓</span></div></a>
 </div>
 <details class="case-detail" id="case-baek"><summary><span>백이현 상세 제작 사례</span><span class="case-detail-hint">기획·프롬프트·대화 QC 전문 보기 <span aria-hidden="true">⌄</span></span></summary><article class="sheet">
 <span class="sample">CASE STUDY 01 · ORIGINAL AI CHARACTER / 백이현</span>
