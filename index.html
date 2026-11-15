@@ -146,6 +146,21 @@
  .mugyeol-layout{grid-template-columns:minmax(0,1fr);gap:16px}
  .mugyeol-player{width:100%;max-width:320px;margin:0 auto}
 }
+
+.taehyeon-feature{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);column-gap:clamp(20px,3vw,36px);row-gap:10px;grid-template-areas:"copy demo" "art demo";grid-template-rows:auto 1fr;align-items:start;margin-top:8px}
+.taehyeon-design{grid-area:copy}.taehyeon-art{grid-area:art}.taehyeon-demo{grid-area:demo}
+.taehyeon-design h4{font-size:clamp(18px,2.2vw,23px);line-height:1.5;margin:5px 0 12px}
+.taehyeon-design p{font-size:15px;line-height:1.8;margin:0 0 12px;word-break:keep-all}
+.taehyeon-art,.taehyeon-demo{margin:0}
+.taehyeon-art img{display:block;width:auto;max-width:100%;height:auto;max-height:245px;border-radius:12px;margin:18px auto 0}
+.taehyeon-art figcaption,.taehyeon-demo figcaption{font-size:13px;color:var(--muted);line-height:1.55}
+.taehyeon-art figcaption{text-align:center;margin-top:6px}
+.taehyeon-demo figcaption{margin:0 0 8px}
+.taehyeon-hud{border-radius:12px;overflow:hidden;background:#0b1520;color:#d4ecf0;padding:clamp(15px,2.2vw,24px);font-family:'Pretendard','Noto Sans KR',sans-serif;line-height:1.8;overflow-wrap:anywhere}
+.taehyeon-hud p{color:inherit;font-family:inherit;line-height:inherit}
+.taehyeon-hud summary:focus-visible{outline:2px solid #7ff3f7;outline-offset:-3px}
+.taehyeon-hud>details:last-child{margin-bottom:0!important}
+@media(max-width:760px){.taehyeon-feature{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "demo" "art";grid-template-rows:auto;row-gap:16px}.taehyeon-art img{max-height:205px}.taehyeon-hud h4{font-size:clamp(19px,5.5vw,28px)!important}}
 </style></head><body><div class="gradient" id="top"><header class="header"><div class="container nav"><a class="brand" href="#top">PORTFOLIO<span>.</span></a><nav class="links" aria-label="주요 메뉴"><a href="#profile">소개</a><a href="#creator-fit">PM 역량</a><a href="#tools">프로토타입</a><a href="#tingle-ux">서비스 UX</a><a href="#ai">캐릭터 사례</a><a href="#mugyeol-video">최무결 · 누아룸</a><a href="#seonwoo-hyeon">이미지·GIF</a><a href="#culture">창작 경험</a><a href="#contact">연락처</a></nav></div></header><section class="container hero"><div class="eyebrow">김재미 · AI 캐릭터챗 서비스 PM 포트폴리오</div><h1>캐릭터와의 첫 대화부터<br><em>이용자의 다음 선택까지</em></h1><p class="lead">AI 캐릭터 8종을 기획하고 공개하며 대화가 이용자의 선택을 앞질러 가는 문제를 찾아 수정했습니다. 동료 작가들을 위한 창작 도구 ‘BL 한끗’은 직접 기획하고 바이브 코딩으로 구현해 무료로 공개했습니다.</p><div class="hero-achievements" aria-label="프로젝트 범위"><div class="hero-achievement"><strong>8종</strong><span>캐릭터 콘텐츠 제작·공개</span></div><div class="hero-achievement"><strong>프로토타입</strong><span>웹서비스 기획·구현·배포</span></div><div class="hero-achievement"><strong>서비스 UX</strong><span>결제·대화 복귀 동선 개선 제안</span></div></div><div class="actions"><a class="btn primary" href="#creator-fit">PM 직무 역량 보기</a><a class="btn" href="#tools">BL 한끗 · 프로토타입 보기</a></div></section></div>
 <main>
 <section class="container profile-wrap" id="profile" aria-label="지원자 프로필"><div class="profile-card"><div><div class="tag">PROFILE · PRODUCT MANAGEMENT</div><h2 class="profile-name">김재미</h2><p class="profile-role">AI 캐릭터챗 서비스 PM 지원자</p><p class="resume-note" style="margin:6px 0 9px">사용자 경험 설계 · 대화 품질 검수 · 서비스 개선 제안</p><a class="profile-email" href="mailto:jsne126ds@gmail.com">jsne126ds@gmail.com</a></div><div class="profile-info"><div class="tag">RELEVANT EXPERIENCE</div><ul><li>AI 캐릭터 8종 기획·공개 및 스토리 소개·이용자 진입 경험 설계</li><li>캐릭터별 관계 키워드와 대표 장면을 소개 문구·비주얼로 구성</li><li>제타 → 티키타 캐릭터 이식과 플랫폼별 콘텐츠 경험 조정</li><li>웹소설 상업 출간 및 장르 콘텐츠 향유를 통한 타깃 독자 이해</li><li>약 9년간 창작 모임 운영 및 이용자·창작자 커뮤니케이션</li><li>반복 플레이·고객 문의 분석을 통한 이탈 요인과 경험 개선 관점</li></ul></div></div></section>
@@ -189,7 +204,7 @@
 <a class="recruiter-project" href="#mugyeol-video" aria-label="최무결 · 누아룸 공개 작품과 제작 사례 보기"><img src="https://sfhysqdoqkikhvayhsgs.supabase.co/storage/v1/object/public/characters/2026/11/Vt3tW4Q6s3fnrh0l5l9FMA.webp" alt="클러스터 멤버 최무결 캐릭터 일러스트" loading="lazy" decoding="async"><div class="recruiter-project-body"><span class="tag">NUAROOM · CHARACTER 07</span><h3>최무결</h3><strong>아이돌 소꿉친구 · 열애설 · 홍보 영상 제작</strong><p>같은 토끼 키링이 찍힌 두 장의 인스타 스토리로 열애설 도입을 구성하고, 무대와 일상 속 무결을 담은 홍보 영상 제작</p><span class="recruiter-project-link">작품 기획·제작 과정 보기 ↓</span></div></a>
 <a class="recruiter-project" href="#case-taehyeon" aria-label="류태현 상세 제작 사례로 이동">
 <img src="./assets/%EB%A5%98%ED%83%9C%ED%98%84%20%EC%9B%90%EB%B3%B8.png" width="768" height="1280" alt="짙은 버건디색 머리에 검은 티셔츠를 입은 류태현의 정면 초상" loading="lazy" decoding="async" style="object-position:center 43%">
-<div class="recruiter-project-body"><span class="tag">TIKITA · CHARACTER 08</span><h3>류태현</h3><strong>헌터물 · 라이벌 재회 · 랭킹 시스템</strong><p>전 1위인 이용자와 현 1위 류태현의 재회. 랭킹을 열어 본 뒤, 그 이야기를 태현에게 꺼낼지는 이용자가 정합니다.</p><span class="recruiter-project-link">기획·QC 자세히 보기 ↓</span></div></a>
+<div class="recruiter-project-body"><span class="tag">TIKITA · CHARACTER 08</span><h3>류태현</h3><strong>헌터물 · 라이벌 재회 · 소개 HTML</strong><p>헌터협회 순위표에 현 1위 태현과 비활동 상태인 이용자를 나란히 두고, 두 사람의 과거는 펼쳐 읽는 사고 기록으로 구성했습니다.</p><span class="recruiter-project-link">소개 HTML·기획 사례 보기 ↓</span></div></a>
 </div>
 <details class="case-detail" id="case-baek"><summary><span>백이현 상세 제작 사례</span><span class="case-detail-hint">기획·프롬프트·대화 QC 전문 보기 <span aria-hidden="true">⌄</span></span></summary><article class="sheet">
 <span class="sample">CASE STUDY 01 · ORIGINAL AI CHARACTER / 백이현</span>
@@ -265,17 +280,69 @@
 </article></details><details class="case-detail" id="case-jaeuk"><summary><span>권재욱 상세 제작 사례</span><span class="case-detail-hint">기획 의도·캐릭터 말투·대화 QC 보기 <span aria-hidden="true">⌄</span></span></summary><article class="sheet"><span class="sample">CASE STUDY 06 · TIKITA / ADULT ROMANCE</span><div class="dragon-detail-art"><img src="./assets/%EA%B6%8C%EC%9E%AC%EC%9A%B1%20NEW%EC%9B%90%EB%B3%B8.png" alt="티키타 공개작 《나의 주인, 나의 아저씨》의 권재욱" loading="lazy"></div><h3>나의 주인, 나의 아저씨</h3><p class="desc"><strong>기획 의도</strong> · BL 초단편을 읽고 쓰며 관심을 둔 ‘오지콤’과 ‘BDSM’을 한 인물에 담았습니다. 서울에서 테일러숍을 운영하는 서른아홉 살 권재욱은 이용자와 오래 호흡을 맞춰 온 파트너입니다. 서로의 취향은 누구보다 잘 알지만 서로의 마음은 물어본 적 없는 두 사람이, 익숙한 사이에서 처음으로 연애를 고민하는 순간을 만들고 싶었습니다.</p>
 <div class="grid cols2"><div class="card" style="padding:20px"><div class="tag">01 · CHARACTER VOICE</div><h3 style="font-size:18px">“밥 안 먹었어? 혼나려고.”</h3><p>평소 재욱의 이 말은 끼니를 걱정해서 건네는 농담입니다. 둘이 합의한 플레이에 들어가면 웃음기가 사라지고 “똑바로 봐.”처럼 말이 짧아집니다. 끝나고 나면 몸은 괜찮은지 묻고 쉴 때까지 곁을 지킵니다. 같은 반말 안에서도 이용자가 지금 어떤 재욱과 마주하고 있는지 느끼도록 대사와 행동을 함께 설계했습니다.</p></div><div class="card" style="padding:20px"><div class="tag">02 · RELATIONSHIP</div><h3 style="font-size:18px">전 파트너를 첫 장면에 부른 이유</h3><p>재욱과 함께 간 모임에서 전 파트너가 “요즘은 파트너 있어?” 하고 묻습니다. 이용자가 재욱을 어떤 사이로 소개할지 스스로 고르는 장면입니다. 뒤풀이가 끝나면 전 파트너도 퇴장합니다. 그날의 일을 귀갓길에 꺼낼지, 다음 날도 평소처럼 만날지는 두 사람의 대화에 맡겼습니다.</p></div><div class="card" style="padding:20px"><div class="tag">03 · DIALOGUE QC</div><h3 style="font-size:18px">재욱이 숫자를 세라고 해 놓고, AI가 대신 센다면</h3><p>테스트 중 재욱이 이용자에게 숫자를 세라고 한 뒤 AI가 다음 숫자까지 써 버리는 문제가 반복됐습니다. 재욱의 지시에서 응답을 끝내고, 실제 이용자가 답한 뒤에 다음 반응을 이어 가도록 프롬프트를 수정해 같은 장면을 다시 점검했습니다.</p></div><div class="card" style="padding:20px"><div class="tag">04 · COMMAND QC</div><h3 style="font-size:18px"><code>!폰</code>을 열면 누가 누구에게 말하는지</h3><p>평소 두 사람이 얼마나 편한 사인지는 휴대폰 속 짧은 대화로 보여 주고 싶었습니다. 의도와 다른 내용이 나올 때마다 명령어를 다시 실행하며 출력 규칙을 다듬었습니다. 재욱은 ‘아저씨❤️’라는 이름으로 반말을 쓰고 이용자는 친근한 존댓말로 답합니다. 이 가상 기록을 열어 보는 동안에는 본편의 시간이 흐르지 않도록 설정했습니다.</p></div></div><div class="project-actions" style="justify-content:center;margin-top:24px"><a class="btn primary" href="https://tikita.ai/story/O6Z4R9N0" target="_blank" rel="noopener noreferrer">티키타에서 권재욱 작품 보기 (성인)</a></div></article></details>
 <details class="case-detail" id="case-taehyeon">
-<summary><span>류태현 상세 제작 사례</span><span class="case-detail-hint">랭킹 설계·대화 QC 보기 <span aria-hidden="true">⌄</span></span></summary>
+<summary><span>류태현 상세 제작 사례</span><span class="case-detail-hint">소개 HTML·랭킹 설계·대화 QC 보기 <span aria-hidden="true">⌄</span></span></summary>
 <article class="sheet"><span class="sample">CASE STUDY 08 · TIKITA / HUNTER FANTASY</span>
 <h3>실시간 랭킹이 갱신되었습니다</h3>
-<div class="mugyeol-layout">
-<div><p class="desc">“네가 1위였으니까.” 1년 전, 신입을 구하라는 지시를 어기고 이용자를 살린 태현의 대답입니다. 이제 1위는 태현입니다. 이용자가 부상당한 그를 다시 찾아가는 순간부터 대화를 시작합니다.</p>
-<div class="card" style="padding:20px"><div class="tag">RANKING SYSTEM</div><h3 style="font-size:18px">한 번도 이기지 못한 상대의 자리가 비었다면</h3><p>이용자가 60일 동안 능력을 쓰지 않아 순위표에서 빠지자, 줄곧 2위였던 태현이 1위에 오릅니다. 이용자가 현장을 찾아가거나 랭킹을 확인해도 순위는 그대로입니다. 실제로 능력을 쓰는 순간 비활동이 풀리고, 그때의 역량으로 순위를 다시 매기도록 설계했습니다.</p></div></div>
-<img src="./assets/ryu-taehyeon-intro.webp" width="768" height="1280" alt="게이트 통제선 안에서 이용자를 올려다보는 류태현" loading="lazy" decoding="async" style="display:block;max-width:100%;width:auto;height:auto;max-height:380px;margin:0 auto;border-radius:16px"></div>
-<div class="grid cols2" style="margin-top:20px">
+<p class="desc">“네가 1위였으니까.” 1년 전, 신입을 구하라는 지시를 어기고 이용자를 살린 태현의 대답입니다. 이제 1위는 태현입니다. 이용자가 부상당한 그를 다시 찾아가는 순간부터 대화를 시작합니다.</p>
+<div class="taehyeon-feature">
+<div class="taehyeon-design">
+<div class="tag">스토리 소개 HTML</div>
+<h4>헌터협회 기록을 열어 보는 작품 소개</h4>
+<p>채팅을 시작하기 전에 두 사람의 관계를 순위표에서 먼저 보게 하고 싶었습니다. 류태현의 이름 옆에는 청록색으로 ‘RANK 01’을, 한때 1위였던 이용자의 자리에는 순위 대신 ‘비활동’을 표시했습니다.</p>
+<p>왜 1위가 바뀌었는지 궁금해진 독자는 ‘노을이 번진 게이트’와 ‘그 후 1년’을 차례로 펼쳐볼 수 있습니다. 짙은 남색 바탕과 청록색 구분선을 써서 랭킹과 사고 기록이 한 협회의 자료처럼 보이게 했습니다.</p>
+</div>
+<figure class="taehyeon-art"><img src="./assets/ryu-taehyeon-intro.webp" alt="게이트 통제선 안에서 이용자를 올려다보는 류태현" width="768" height="1280" loading="lazy" decoding="async"><figcaption>게이트 공략 직후, 이용자와 다시 마주친 태현</figcaption></figure>
+<figure class="taehyeon-demo">
+<figcaption>소개 페이지 발췌 · 사고 기록과 명령어를 눌러 펼쳐 보세요</figcaption>
+<div class="taehyeon-hud" lang="ko"><div style="display:flex; align-items:center; gap:10px; margin-bottom:6px;">
+    <div style="width:90px; height:8px; background:repeating-linear-gradient(-55deg,#7ff3f7 0 9px,transparent 9px 15px);"></div>
+    <div style="flex:1; height:1px; background:#7ff3f7; opacity:0.6;"></div>
+    <div style="color:#7ff3f7; font-size:11px; letter-spacing:4px;">● ● ● ● ●</div>
+  </div>
+  <p style="margin:0; font-size:11px; letter-spacing:3px; color:#4fa9b3;">SYSTEM // HUNTER ASSOCIATION // GATE RECORD</p>
+<h4 style="margin:18px 0 4px; font-size:28px; font-weight:800; color:#ffffff; letter-spacing:2px;">실시간 랭킹이 갱신되었습니다</h4>
+  <p style="margin:0 0 22px; color:#7ff3f7; font-size:14px;">이긴 적 없는 1위와, 떠나 버린 1위</p>
+<div style="margin:26px 0; border:1px solid #2c6b78; border-left:4px solid #7ff3f7; background:rgba(127,243,247,0.05); padding:16px 18px;">
+    <p style="margin:0 0 10px; font-size:12px; letter-spacing:3px; color:#7ff3f7;">[ 국내 헌터 랭킹 ]</p>
+    <p style="margin:0; font-size:15px;"><span style="color:#7ff3f7;">RANK 01</span>&nbsp;&nbsp;<b style="color:#fff;">류태현</b></p>
+    <p style="margin:2px 0 0; font-size:15px; color:#5d7e86;"><span>— — —</span>&nbsp;&nbsp;이용자&nbsp;&nbsp;<span style="font-size:12px;">[비활동]</span></p>
+    <p style="margin:10px 0 0; font-size:12px; color:#4fa9b3;">※ 순위 변동 사유는 공개되지 않습니다.</p>
+  </div>
+<details style="margin-bottom:12px; border:1px solid #2c6b78; background:rgba(127,243,247,0.03);">
+    <summary style="cursor:pointer; padding:12px 16px; color:#7ff3f7; letter-spacing:2px; font-size:13px;">RECORD 01 — 노을이 번진 게이트</summary>
+    <div style="padding:4px 16px 16px;">
+      <p style="margin:0 0 12px;">대낮에 노을이 번지기 시작한 게이트. 협회는 이례적으로 국내 1위와 2위를 함께 투입했다. 안은 두 개의 태양이 뜬 사막이었고, 위험도는 예상을 넘어섰다.</p>
+      <p style="margin:0 0 12px;">공략대가 무너졌을 때, 류태현의 〈접지〉로 꺼낼 수 있는 사람은 단 한 명이었다. 크게 다친 이용자, 그리고 혼자서는 빠져나갈 수 없는 신입.</p>
+      <p style="margin:0 0 12px;">이용자는 신입을 구하라고 했다.<br>태현은 그 말을 분명히 들었고, 이용자에게 손을 뻗었다.</p>
+      <p style="margin:0 0 12px;">살아 돌아온 사람은 둘뿐이었다.</p>
+      <p style="margin:0; padding:10px 14px; border-left:2px solid #7ff3f7; color:#ffffff;">왜 나를 택했느냐는 물음에 돌아온 답은 하나였다.<br><b>“네가 1위였으니까.”</b></p>
+    </div>
+  </details>
+<details style="margin-bottom:12px; border:1px solid #2c6b78; background:rgba(127,243,247,0.03);">
+    <summary style="cursor:pointer; padding:12px 16px; color:#7ff3f7; letter-spacing:2px; font-size:13px;">RECORD 02 — 그 후 1년</summary>
+    <div style="padding:4px 16px 16px;">
+      <p style="margin:0 0 12px;">이용자는 현장을 떠났다. 태현이 몇 번을 찾아오고 연락을 남겨도, 답은 한 번도 돌아가지 않았다.</p>
+      <p style="margin:0 0 12px;">능력을 쓰지 않은 채 60일이 지나자 이용자는 비활동 상태로 순위에서 빠졌다. 그렇게 류태현은 처음으로 1위가 됐다. 한 번도 이겨 보지 못한 채로.</p>
+      <p style="margin:0;">그 뒤로 태현은 대부분의 게이트에 혼자 들어갔다.</p>
+    </div>
+  </details>
+<details style="margin-bottom:28px; border:1px solid #7ff3f7; background:rgba(127,243,247,0.05);">
+    <summary style="cursor:pointer; padding:12px 16px; color:#7ff3f7; letter-spacing:2px; font-size:13px;">SYSTEM COMMAND — 상태창 열기</summary>
+    <div style="padding:4px 16px 16px; font-size:14px;">
+      <p style="margin:0 0 14px; color:#4fa9b3; font-size:13px;">채팅창에 입력하면 이용자만 볼 수 있는 기록이 열립니다.</p>
+      <p style="margin:0 0 12px;"><span style="color:#7ff3f7;">!랭킹</span><br>국내 헌터 랭킹. 비활동 상태인 이용자의 이름은 아직 없습니다.</p>
+      <p style="margin:0 0 12px;"><span style="color:#7ff3f7;">!출동기록</span><br>류태현의 협회 출동 이력. 최근 공략부터 편성과 결과를 보여 줍니다.</p>
+      <p style="margin:0 0 12px;"><span style="color:#7ff3f7;">!헌터넷</span><br>헌터 커뮤니티의 최신 게시글과 익명 댓글.</p>
+      <p style="margin:0 0 14px;"><span style="color:#7ff3f7;">!폰</span><br>류태현의 휴대폰. <span style="color:#7ff3f7;">!폰 메신저</span> · <span style="color:#7ff3f7;">!폰 통화 기록</span> · <span style="color:#7ff3f7;">!폰 갤러리</span> · <span style="color:#7ff3f7;">!폰 메모</span></p>
+      <p style="margin:0; padding-top:10px; border-top:1px solid #2c6b78; font-size:12px; color:#4fa9b3;">※ 열람해도 태현은 알지 못하며, 장면이 진행되지 않습니다.</p>
+    </div>
+  </details></div>
+<div class="project-actions" style="justify-content:center;margin-top:24px"><a class="btn primary" href="https://tikita.ai/story/ASO2YKZ5" target="_blank" rel="noopener noreferrer">티키타에서 소개 페이지 전체 보기 (성인)</a></div></figure></div>
+<div class="grid cols3" style="margin-top:20px">
+<div class="card" style="padding:20px"><div class="tag">RANKING SYSTEM</div><h3 style="font-size:18px">한 번도 이기지 못한 상대의 자리가 비었다면</h3><p>이용자가 60일 동안 능력을 쓰지 않아 순위표에서 빠지자, 줄곧 2위였던 태현이 1위에 오릅니다. 이용자가 현장을 찾아가거나 랭킹을 확인해도 순위는 그대로입니다. 실제로 능력을 쓰는 순간 비활동이 풀리고, 그때의 역량으로 순위를 다시 매기도록 설계했습니다.</p></div>
 <div class="card" style="padding:20px"><div class="tag">COMMAND QC</div><h3 style="font-size:18px">혼자 연 순위표를 태현이 읽는 문제</h3><p>테스트에서 <code>!랭킹</code>을 입력하자 태현이 상태창을 바라보며 “뭘 새삼스럽게 확인하고 있어.”라고 말했습니다. 이용자가 혼자 확인한 정보가 대사로 새어 나온 겁니다. 조회 응답은 순위표에서 끝내고, 다음 대화는 조회 직전 장면에서 이어지도록 규칙을 고쳤습니다.</p></div>
 <div class="card" style="padding:20px"><div class="tag">MESSAGE FORMAT</div><h3 style="font-size:18px">오래된 문자 한 통을 한 줄로 읽도록</h3><p>태현의 휴대폰에서 과거 문자를 열자 발송 시각 ‘18:32’의 ‘32’가 별도 말풍선에 떴습니다. 시각은 ‘18시 32분’으로 풀어 쓰고, 날짜·보낸 사람·본문을 한 줄에 묶도록 출력 형식을 바꿨습니다.</p></div></div>
-<div class="project-actions" style="justify-content:center;margin-top:24px"><a class="btn primary" href="https://tikita.ai/story/ASO2YKZ5" target="_blank" rel="noopener noreferrer">티키타에서 류태현 작품 보기 (성인)</a></div>
+
 </article></details></div></section>
 <section class="section soft" id="mugyeol-video"><div class="container" id="nooroom-video">
 <div class="eyebrow">FEATURED PROJECT / NUAROOM</div>
